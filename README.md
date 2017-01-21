@@ -11,6 +11,6 @@ Regarding the password rules, please refer to Apple’s password rules (It must 
 ***Solution***
 
 I've realized a Spring REST Service. It have a simple registration form.
-My system validate password by different criteria. I used a regular expressions for checking strings.
+My system validate password and email by different criteria. I used a regular expressions for checking strings.
 
 Used technologies: Spring Framework, Spring MVC, JUnit.
