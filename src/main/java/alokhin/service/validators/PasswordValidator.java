@@ -1,8 +1,5 @@
 package alokhin.service.validators;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class PasswordValidator extends Validator {
 
     public PasswordValidator() {
@@ -38,12 +35,5 @@ public class PasswordValidator extends Validator {
         }
 
         return true; // Validate successfully
-    }
-
-    public boolean matchString(String expression, String string) {
-        Pattern p = Pattern.compile(expression);
-        Matcher m = p.matcher(string);
-
-        return m.find();
     }
 }

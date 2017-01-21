@@ -1,5 +1,6 @@
 package alokhin.service;
 
+import alokhin.service.validators.EmailValidator;
 import alokhin.service.validators.PasswordValidator;
 import alokhin.service.validators.Validator;
 import org.junit.Test;
@@ -27,5 +28,13 @@ public class ValidationTest {
 
         boolean val6 = passwordValidator.validate("qweASDtw534sdyyyyerr");
         assertEquals(val6, false);
+
+        Validator emailValidator = new EmailValidator();
+
+        boolean val8 = emailValidator.validate("exesd@gmail.com");
+        assertEquals(val8, true);
+
+        boolean val9 = emailValidator.validate("wqwegmail.ru");
+        assertEquals(val9, false);
     }
 }

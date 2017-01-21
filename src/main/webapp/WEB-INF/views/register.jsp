@@ -13,8 +13,8 @@
     <div align="center">
         <table>
             <tr>
-                <td>User Name</td>
-                <td><input type="text" name="username"/></td>
+                <td>Email</td>
+                <td><input type="text" name="email"/></td>
             </tr>
             <tr>
                 <td>Password</td>
