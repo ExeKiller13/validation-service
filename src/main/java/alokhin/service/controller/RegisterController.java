@@ -1,6 +1,6 @@
 package alokhin.service.controller;
 
-import alokhin.service.model.RegisterBean;
+import alokhin.service.model.UserBean;
 import alokhin.service.validators.LoginValidator;
 import alokhin.service.validators.PasswordValidator;
 import alokhin.service.validators.Validator;
@@ -19,13 +19,13 @@ public class RegisterController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public String submit(Model model, @ModelAttribute("registerBean") RegisterBean registerBean) {
+    public String submit(Model model, @ModelAttribute("userBean") UserBean userBean) {
 
         Validator loginValidator = new LoginValidator();
         Validator passwordValidator = new PasswordValidator();
 
-        boolean loginState = loginValidator.validate(registerBean.getUsername()); // Flag showing that login is correct
-        boolean passwordState = passwordValidator.validate(registerBean.getPassword()); // Flag showing that password is correct
+        boolean loginState = loginValidator.validate(userBean.getUsername()); // Flag showing that login is correct
+        boolean passwordState = passwordValidator.validate(userBean.getPassword()); // Flag showing that password is correct
 
         if (!loginState) {
             model.addAttribute("error", loginValidator.getState());
@@ -36,7 +36,7 @@ public class RegisterController {
             return "register"; // Error
         }
 
-        model.addAttribute("msg", registerBean.getUsername()); // Validation successful
+        model.addAttribute("msg", userBean.getUsername()); // Validation successful
         return "success"; // Successful .jsp page
     }
 }

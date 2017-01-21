@@ -1,8 +1,8 @@
 package alokhin.service.model;
 
-public class RegisterBean {
+public class UserBean {
 
-    // Simple Bean
+    // Simple User Bean
 
     private String username;
     private String password;
