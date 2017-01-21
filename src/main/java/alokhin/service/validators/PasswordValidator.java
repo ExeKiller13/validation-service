@@ -8,7 +8,7 @@ public class PasswordValidator extends Validator {
 
     private static final String PASSWORD_PATTERN_A = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\\s).*$";
     private static final String PASSWORD_PATTERN_B = "^[\u0000-\u007F]*$";
-    private static final String PASSWORD_PATTERN_C = "(?:abcd|dcba|bcde|edcb|cdef|fedc|defg|gfed|efgh|hgfe|fghi|ihgf|ghij|jihg|hijk|kjih|ijkl|lkji|jklm|mlkj|klmn|nmlk|lmno|onml|mnop|ponm|nopq|qpon|opqr|rqpo|pqrs|srqp|qrst|tsrq|rstu|utsr|stuv|vuts|tuvw|wvut|uvwx|xwvu|vwxy|yxwv|wxyz|zyxw|0123|1234|2345|3456|4567|5678|6789)";
+    private static final String PASSWORD_PATTERN_C = "(?:abcd|dcba|bcde|edcb|cdef|fedc|defg|gfed|efgh|hgfe|fghi|ihgf|ghij|jihg|hijk|kjih|ijkl|lkji|jklm|mlkj|klmn|nmlk|lmno|onml|mnop|ponm|nopq|qpon|opqr|rqpo|pqrs|srqp|qrst|tsrq|rstu|utsr|stuv|vuts|tuvw|wvut|uvwx|xwvu|vwxy|yxwv|wxyz|zyxw|ABCD|DCBA|BCDE|EDCB|CDEF|FEDC|DEFG|GFED|EFGH|HGFE|FGHI|IHGF|GHIJ|JIHG|HIJK|KJIH|IJKL|LKJI|JKLM|MLKJ|KLMN|NMLK|LMNO|ONML|MNOP|PONM|NOPQ|QPON|OPQR|RQPO|PQRS|SRQP|QRST|TSRQ|RSTU|UTSR|STUV|VUTS|TUVW|WVUT|UVWX|XWVU|VWXY|YXWV|WXYZ|ZYXW|0123|3210|1234|4321|2345|5432|3456|6543|4567|7654|5678|8765|6789|9876)";
     private static final String PASSWORD_PATTERN_D = "(\\w+)\\1{3,}";
 
     @Override
